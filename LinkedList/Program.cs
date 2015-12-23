@@ -1,4 +1,4 @@
-﻿using ConsoleApplication1;
+﻿using GenericLinkedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
 
-namespace ConsoleApplication1
+namespace GenericLinkedList
 {
     public class Node<T>
     {
