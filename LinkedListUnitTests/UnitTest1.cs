@@ -1,14 +1,11 @@
-﻿using ConsoleApplication1;
-using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using GenericLinkedList;
 
-namespace ConsoleApplication1.Tests
+namespace GenericLinkedList
 {
     public class LinkedListAreEqual : IEqualityComparer<LinkedList<int>>
     {
-
-
         public bool Equals(LinkedList<int> x, LinkedList<int> y)
         {
             if (object.ReferenceEquals(x, y)) return true;
@@ -27,10 +24,6 @@ namespace ConsoleApplication1.Tests
 
             return hashCodeHeadData ^ hasCodeLastData;
         }
-
-      
-
-      
     }
 
     [TestClass()]

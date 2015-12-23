@@ -6,7 +6,7 @@
     <ProjectGuid>{8B5321F8-0BEF-4421-9B98-A1A854EEE425}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LinkedListUnitTests</RootNamespace>
+    <RootNamespace>GenericLinkedList</RootNamespace>
     <AssemblyName>LinkedListUnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApplication1\ConsoleApplication1.csproj">
+    <ProjectReference Include="..\LinkedList\LinkedListImplementation.csproj">
       <Project>{461D0569-4106-4F28-AFAD-7ED876F9D053}</Project>
-      <Name>ConsoleApplication1</Name>
+      <Name>LinkedListImplementation</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
