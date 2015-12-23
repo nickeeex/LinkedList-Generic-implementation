@@ -14,7 +14,7 @@ namespace ConsoleApplication1
         public T data;
     }
 
-    public class LinkedList<T>
+    public class LinkedList<T> 
     {
         private Node<T> head { get; set; }
         private int _count { get; set; }
@@ -55,12 +55,13 @@ namespace ConsoleApplication1
             return string.Join(Environment.NewLine, temp);
 
         }
-      
+        /// <summary>
+        /// Find first occurance of Node and return the node, else return null
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         public Node<T> Find(T data)
         {
-            //This trick can be used instead of using an else 
-            //The method returns the default value for the type T 
-
             Node<T> current = head;
             //Loop all Nodes untill we get to the last Node
             while (current.Next != null)
